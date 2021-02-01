@@ -3,50 +3,49 @@
 /*********************************************************************************/
 
 
-	.thumbnails {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-align-items: stretch;
-		-webkit-align-items: stretch;
-		-ms-align-items: stretch;
-		align-items: stretch;
-		-moz-justify-content: center;
-		-webkit-justify-content: center;
-		-ms-justify-content: center;
-		justify-content: center;
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
+.thumbnails {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-align-items: stretch;
+	-webkit-align-items: stretch;
+	-ms-align-items: stretch;
+	align-items: stretch;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	-moz-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+	.thumbnails .box {
+		margin: 0 1em 2em 1em;
+		width: 24%;
 	}
 
-		.thumbnails .box {
-			margin: 0 1em 2em 1em;
-			width: 24%;
-		}
+.box {
+	border-radius: 4px;
+	margin-bottom: 2em;
+	background:#8c529bb0;
+	text-align: center;
+}
 
-	.box {
-		border-radius: 4px;
-		margin-bottom: 2em;
-		background:#8c529bb0;
-		text-align: center;
+.box:hover
+{
+	background: #599eccea;
+	   box-shadow: 0 12px 16px 0 rgba(247, 245, 245, 0.24),0 17px 50px 0 rgba(255, 255, 255, 0.19);
+}
+	.box .inner {
+		padding: 0em;
+		width: 100%;
 	}
 
-	.box:hover
-	{
-		background: #599eccea;
-   		box-shadow: 0 12px 16px 0 rgba(247, 245, 245, 0.24),0 17px 50px 0 rgba(255, 255, 255, 0.19);
+	.box .image {
+		width:23.3em; 
+		height:17em;
+		margin-top:2em;
 	}
-		.box .inner {
-			padding: 0em;
-			width: 100%;
-		}
-
-		.box .image {
-			width:23.3em; 
-			height:17em;
-			margin-top:2em;
-		}
-
