@@ -3306,3 +3306,18 @@
 
 		}
 
+		.myheader {
+			z-index: 1; 
+			padding: 10px 16px;
+			background: #2b2b2b;
+			color: #2b2b2b;
+		  }
+		
+		/* The sticky class is added to the header with JS when it reaches its scroll position */
+		.sticky {
+			background: #2b2b2b;
+			color: #2b2b2b;
+			position: fixed;
+			top: 0;
+			width: 100%
+		  }
