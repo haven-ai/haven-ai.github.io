@@ -1000,3 +1000,132 @@ ul.contact li a.icon-rss:before
  margin-top:50px;
 
 }
+
+section.special, article.special {
+	text-align: center;
+}
+
+section .inner {
+	max-width: 65em;
+	width: calc(100% - 6em);
+	margin: 0 auto;
+}
+
+.image {
+	border-radius: 0;
+	border: 0;
+	display: inline-block;
+	position: relative;
+}
+
+	.image img {
+		border-radius: 0;
+		display: block;
+	}
+
+	.image.left, .image.right {
+		max-width: 40%;
+	}
+
+		.image.left img, .image.right img {
+			width: 100%;
+		}
+
+	.image.left {
+		float: left;
+		margin: 0 1.5em 1em 0;
+		top: 0.25em;
+	}
+
+	.image.right {
+		float: right;
+		margin: 0 0 1em 1.5em;
+		top: 0.25em;
+	}
+
+	.image.fit {
+		display: block;
+		margin: 0 0 2em 0;
+		width: 100%;
+	}
+	
+.box.alt {
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+}
+
+#two {
+	padding: 6em 0 4em 0;
+	background: #f3f3f3;
+	background: -moz-linear-gradient(left, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
+	background: -webkit-linear-gradient(left, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
+	background: linear-gradient(to right, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#f7f7f7',GradientType=1 );
+}
+
+	#two .inner {
+		display: -ms-flexbox;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-direction: row;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+
+		#two .inner article {
+			width: 33.33%;
+		}
+
+			#two .inner article:first-child {
+				padding-right: 6em;
+			}
+
+			#two .inner article:last-child {
+				padding-left: 6em;
+			}
+
+	@media screen and (max-width: 980px) {
+
+		#two {
+			padding: 4em 0 2em 0;
+			background: -moz-linear-gradient(top, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
+			background: -webkit-linear-gradient(top, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
+			background: linear-gradient(to bottom, #f3f3f3 0%, #f3f3f3 50%, #f7f7f7 0%, #f7f7f7 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#f7f7f7',GradientType=0 );
+		}
+
+			#two .inner {
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+			}
+
+				#two .inner article {
+					width: 100%;
+				}
+
+					#two .inner article:first-child {
+						padding-right: 0;
+						padding-bottom: 2em;
+					}
+
+					#two .inner article:last-child {
+						padding-left: 0;
+						padding-top: 2em;
+					}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		#two {
+			padding: 2em 0 0.1em 0;
+		}
+
+	}
+
