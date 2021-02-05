@@ -390,8 +390,6 @@ ul.contact li a.icon-rss:before
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
-	background: #2b2b2b;
-	color: #2b2b2b;
 	position: fixed;
 	top: 0;
 	width: 100%
@@ -491,6 +489,7 @@ ul.contact li a.icon-rss:before
 	background: #883b9bdc;
 	border-radius: 30px;
 	color: #FFF;
+	height:55px;
 }
 
 /*********************************************************************************/
