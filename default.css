@@ -450,9 +450,10 @@ ul.contact li a.icon-rss:before
 
 #menu
 {
-	position: absolute;
+	position: fixed;
 	right: 0;
 	top: 1.6em;
+	width:100%
 }
 
 #menu ul
