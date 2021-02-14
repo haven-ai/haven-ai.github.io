@@ -1078,7 +1078,7 @@ section .inner {
 	}
 
 		#two .inner article {
-			width: 33.33%;
+			width: 50%;
 		}
 
 			#two .inner article:first-child {
