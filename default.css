@@ -1128,5 +1128,55 @@ section .inner {
 			padding: 2em 0 0.1em 0;
 		}
 
+
 	}
+
+.info {
+    display: block;
+    box-sizing: border-box;
+    align-self: flex-end;
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:0 1.25vw
+}
+
+.info div {
+    padding: 2.5vh 0 5vh;
+	margin-bottom:10px;
+	/* background-color:#E8E8E8 */
+}
+
+@media (max-width: 700px) {
+    .info div {
+        grid-column:1/4
+    }
+}
+
+.info div h2 {
+	color: white;
+    font-size: 1.5rem;
+    letter-spacing: -.025em;
+    line-height: 1.1;
+    -webkit-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens:manual
+}
+
+@media (max-width: 1000px) {
+    .info div h2 {
+        font-size:3rem
+    }
+}
+
+@media (max-width: 700px) {
+    .info div h2 {
+        font-size:7rem
+    }
+}
+
+.info div p {
+	color: white;
+    margin:2.5vh 2.5vw 0 0
+}
 
