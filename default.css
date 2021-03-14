@@ -312,7 +312,7 @@ ul.contact li a.icon-rss:before
 
 	.button
 {
-	display: inline-block;
+	display:inline-block;
 	padding: 0.9em 2.3em;
 	background: #883b9bdc;
 	border-radius: 30px;
@@ -324,13 +324,14 @@ ul.contact li a.icon-rss:before
 	letter-spacing: 0.20em;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: 520;
+	font-size: 15px;
 	color: #FFF;
 }
 
 .button:hover
 {
-	background: #599eccea;
+	background: #f7d570;
 }
 
 
@@ -1179,4 +1180,41 @@ section .inner {
 	color: white;
     margin:2.5vh 2.5vw 0 0
 }
+
+/*********************************************************************************/
+/* Cloud                                                                         */
+/*********************************************************************************/
+  
+ul.cloud {
+	list-style:none;
+	padding-left: 0;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content: center;
+	line-height: 2.85rem;
+	width: 600px;
+	margin-left:8.5em;
+  }
+  
+  ul.cloud a {
+	--size: 4;
+	--color: #2b2b2b;
+	color: var(--color);
+	font-size: calc(var(--size) * 0.25rem + 0.5rem);
+	display: block;
+	padding: 0.125rem 0.25rem;
+	position: relative;
+	text-decoration: none;
+  }
+
+  ul.cloud a[data-weight="1"] { --size: 1; }
+  ul.cloud a[data-weight="2"] { --size: 2; }
+  ul.cloud a[data-weight="3"] { --size: 3; }
+  ul.cloud a[data-weight="4"] { --size: 4; }
+  ul.cloud a[data-weight="5"] { --size: 6; }
+  ul.cloud a[data-weight="6"] { --size: 8; }
+  ul.cloud a[data-weight="7"] { --size: 10; }
+  ul.cloud a[data-weight="8"] { --size: 13; }
+  ul.cloud a[data-weight="9"] { --size: 16; }
 
