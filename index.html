@@ -51,7 +51,7 @@
                     <li><a href="#" data-weight="5" style="color:#2b2b2b">Cluster</a></li>
                     <li><a href="#" data-weight="6" style="color:#2b2b2b">Havenized</a></li>
                     <li><a href="#" data-weight="2" style="color:#2b2b2b">Machine Learning</a></li>
-                    <li><a href="#" data-weight="9" style="color:#2b2b2b">Winthin 4 Steps</a></li>
+                    <li><a href="#" data-weight="9" style="color:#2b2b2b">Winthin 3 Steps</a></li>
                     <li><a href="#" data-weight="3" style="color:#2b2b2b">Jupyter</a></li>
                     <li><a href="#" data-weight="7" style="color:#2b2b2b">Notebook</a></li>
                     <li><a href="#" data-weight="8" style="color:#2b2b2b">Slurm</a></li>
@@ -171,6 +171,57 @@
         </div>
     </div>
 </div>
+
+<div id="pipeline" style="background-color: #2b2b2b;">
+    <div class="inner" >
+        <header align = center class="major narrow" >
+            <h2 style="color:white; padding-top:2em;">Haven-AI Pipeline</h2>
+            <p style="margin-top:0.5em; text-transform:none; color:white;">Havenized through 3 Steps</p>
+        </header>
+        <div class="nav" align=center style="margin-bottom: -2.5em;padding-bottom:1em;">
+            <a href="#" class="step1" id="s1" style="font-size:x-large; color:#2b2b2b; background-color: #FFF; text-decoration:none; margin-right:1em;padding-bottom: 1em; padding-right:0.5em; padding-left:0.5em; padding-top:0.5em">Stage 1</i></a> 
+            <a href="#" class="step2" id="s2" style="font-size:x-large; color:#FFF; text-decoration:none; margin-right:1em; padding-bottom: 1em; padding-right:0.5em; padding-left:0.5em; padding-top:0.5em">Stage 2</a>
+            <a href="#" class="step3" id="s3" style="font-size:x-large; color:#FFF; text-decoration:none; padding-bottom: 1em; padding-right:0.5em; padding-left:0.5em; padding-top:0.5em">Stage 3</a>
+        </div>
+            <section class="s1">
+                <div class="box" style="background-color: #FFF;">
+                    <div class="inner" align=left>
+                        <p></p>
+                        <p style="color: #2b2b2b; font-size:20pt; margin-top:0.5em; padding-top: 0.5em;">Preparation Stage</p>
+                        <p style="color:#2b2b2b;">Install</p>
+                        <p>pip install --upgrade git+https://github.com/haven-ai/haven-ai</p>
+                        <p style="color:#2b2b2b;">Code Structure</p>
+                        <img src="images/s1.png" alt="" style="max-width: 600px; max-height: 600px;"/>
+                        <p style="color:#FFF; font-size:12pt; margin-left:1em; margin-right:1em">Reduce your workload. Grab existing benchmarks on GitHub for your project with minimum effort to reproduce or integrate current work</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="s2" style="display:none;">
+                <div class="box" style="background-color: #FFF;">
+                    <div class="inner" align=left>
+                        <p></p>
+                        <p style="color: #2b2b2b; font-size:20pt; margin-top:0.5em; padding-top: 0.5em;">Running Stage</p>
+                        <p style="color:#2b2b2b;">Run in Sequence</p>
+                        <p style="color:#2b2b2b;">Run in Parallel</p>
+                        <p style="color:#FFF; font-size:12pt; margin-left:1em; margin-right:1em">Reduce your workload. Grab existing benchmarks on GitHub for your project with minimum effort to reproduce or integrate current work</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="s3" style="display:none;">
+                <div class="box" style="background-color: #FFF;">
+                    <div class="inner" align=left>
+                        <p></p>
+                        <p style="color: #2b2b2b; font-size:20pt; margin-top:0.5em; padding-top: 0.5em;">Visualization Stage</p>
+                        <p></p>
+                        <p style="color:#FFF; font-size:12pt; margin-left:1em; margin-right:1em">Reduce your workload. Grab existing benchmarks on GitHub for your project with minimum effort to reproduce or integrate current work</p>
+                    </div>
+                </div>
+            </section>
+    </div>
+</div>
+
 
 <!-- One -->
 <section id="visualization" class="wrapper style1" style="background-color:lightgray">
@@ -402,6 +453,52 @@
       }
       x[slideIndex-1].style.display = "block";  
     }
-    </script>
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script>
+	$('.step1').click(function(event) {
+        event.preventDefault();
+	$('section.s3').css('display', 'none');
+    $('section.s2').css('display', 'none');
+	$('section.s1').css('display', '');
+    $(this).css('background-color','white');
+    $(this).css('color','#2b2b2b');
+    $('.step3').css('background-color','');
+    $('.step3').css('color','white');
+    $('.step2').css('background-color','');
+    $('.step2').css('color','white');
+	});
+</script>
+<script>
+	$('.step2').click(function(event) {
+        event.preventDefault();
+	$('section.s3').css('display', 'none');
+    $('section.s1').css('display', 'none');
+	$('section.s2').css('display', '');
+    $(this).css('background-color','white');
+    $(this).css('color','#2b2b2b');
+    $('.step1').css('background-color','');
+    $('.step1').css('color','white');
+    $('.step3').css('background-color','');
+    $('.step3').css('color','white');
+	});
+</script>
+<script>
+	$('.step3').click(function(event) {
+        event.preventDefault();
+	$('section.s1').css('display', 'none');
+    $('section.s2').css('display', 'none');
+	$('section.s3').css('display', '');
+    $(this).css('background-color','white');
+    $(this).css('color','#2b2b2b');
+    $('.step1').css('background-color','');
+    $('.step1').css('color','white');
+    $('.step2').css('background-color','');
+    $('.step2').css('color','white');
+	});
+</script>
+    
 </body>
 </html>
