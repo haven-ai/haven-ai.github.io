@@ -314,7 +314,7 @@ ul.contact li a.icon-rss:before
 {
 	display:inline-block;
 	padding: 0.9em 2.3em;
-	background: #883b9bdc;
+	background-color: #883b9bdc;
 	border-radius: 30px;
 	-moz-transition: opacity 0.25s ease-in-out;
 	-webkit-transition: opacity 0.25s ease-in-out;

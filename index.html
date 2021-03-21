@@ -64,26 +64,90 @@
     </div>
 </div>
 
-<div id="features">
-    <section id="about" style="background-color:#2b2b2b;" class="section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <a href=" " target="blank"><img class="img-fluid" style="width:50%; margin-bottom: 40px; margin-top:5.5em" src="images/logo1.png" alt=""/></a >
-                </div>
-                <div class="col-md-6">
-                    <div class="content mt-50">
-                        <h2 style="color: white; margin-top:-1em; font-size:22pt; text-align:left;" class="subheading subheading;">A painless workflow for managing large-scale machine learning experiments</h2>
-                       <p></p>
-                        <p style="font-size:12pt; text-align:left; color:#FFF">Haven is a library for building, managing and visualizing large-scale reproducible experiments. 
-                            It helps developers establish a workflow that allows them to quickly prototype a reliable codebase. 
-                            It also helps them easily scale that codebase to one that can run, manage, and visualize thousands of experiments seamlessly.
-                        </p >
+<div id="pipeline" style="background-color: #2b2b2b; margin-top:-1em; margin-bottom:-2em; padding-bottom:1em">
+    <div class="inner" >
+        <header align = center class="major narrow" >
+            <h2 style="color:white; padding-top:1.5em"><img class="img-fluid" style="width:18%; margin-top:-0.4em" src="images/logo1.png" alt=""/>Pipeline</h2>
+            <p style="margin-top:0.5em; text-transform:none; color:white;">Getting Started: Havenized within 3 steps</p>
+        </header>
+        <div class="nav" align=center style="margin-bottom: -2.5em;padding-bottom:1em;">
+            <a href="#" class="step0" id="s0" style="font-size:x-large; color:#FFF; background-color:#FFF; color:#2b2b2b; text-decoration:none; margin-right:1em;padding-bottom: 1em; padding-right:0.5em; padding-left:0.5em; padding-top:0.5em">Stage 0: What is Haven-AI?</i></a> 
+            <a href="#" class="step1" id="s1" style="font-size:x-large; color:#FFF; text-decoration:none; margin-right:1em;padding-bottom: 1em; padding-right:0.5em; padding-left:0.5em; padding-top:0.5em">Stage 1</i></a> 
+            <a href="#" class="step2" id="s2" style="font-size:x-large; color:#FFF; text-decoration:none; margin-right:1em; padding-bottom: 1em; padding-right:0.5em; padding-left:0.5em; padding-top:0.5em">Stage 2</a>
+            <a href="#" class="step3" id="s3" style="font-size:x-large; color:#FFF; text-decoration:none; padding-bottom: 1em; padding-right:0.5em; padding-left:0.5em; padding-top:0.5em">Stage 3</a>
+        </div>
+
+        <section class="s0">
+            <div id="features">
+                <section id="about" style="background-color:white; margin-top:2em; margin-bottom:2em" class="section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 text-center">
+                                <h2 style="color: #2b2b2b; margin-top:1.5em; font-size:22pt; text-align:left;" class="subheading subheading;">A reliable workflow for managing large-scale machine learning experiments</h2>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="content mt-50">
+                                    <p style="font-size:12pt; text-align:left; color: #2b2b2b; margin-bottom: 3em;">Haven is a library for building, managing and visualizing large-scale reproducible experiments. 
+                                        It helps developers establish a workflow that allows them to quickly prototype a reliable codebase. 
+                                        It also helps them easily scale that codebase to one that can run, manage, and visualize thousands of experiments seamlessly.
+                                    </p >
+                                </div>
+                                <ul class="actions">
+                                    <li>
+                                        <a href="https://github.com/haven-ai/haven-ai" class="button"><i class="fa fa-github fa-1x" style="color:white"></i>Download</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="s1" style="display:none;">
+            <div class="box" style="background-color: #FFF; pointer-events:none;">
+                <div class="inner" align=left>
+                    <p></p>
+                    <p style="color: #2b2b2b; font-size:20pt; margin-top:0.5em; padding-top: 0.5em;">Preparation Stage</p>                       
+                    <p style="color:#2b2b2b; margin-top:-2em;">Install</p>
+                    <p style="margin-top:-1em">pip install --upgrade git+https://github.com/haven-ai/haven-ai</p>
+                    <p style="color:#2b2b2b;">Expected Code Structure</p>
+                    <p style="margin-top:-1em">Reduce your workload. Grab existing benchmarks on GitHub for your project with minimum effort to reproduce or integrate current work</p>
+                    <img src="images/s1.png" alt="" style="max-width: 600px; max-height: 600px; margin-top:-1em; margin-bottom: 2em;"/>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        
+        <section class="s2" style="display:none;">
+                <div class="box" style="background-color: #FFF; pointer-events:none;">
+                    <div class="inner" align=left>
+                        <p></p>
+                        <p style="color: #2b2b2b; font-size:20pt; margin-top:0.5em; padding-top: 0.5em;">Running Stage</p>
+                        <p style="color:#2b2b2b; margin-top:-2em;">Run in Sequence</p>
+                        <p style="margin-top:-1em">python trainval.py --savedir_base /mnt/home/results -r 1  -v results.ipynb</p>
+                        <p style="color:#2b2b2b;">Run in Parallel</p>
+                        <p style="margin-top:-1em">Using slurm tested under Compute Canada servers<br>
+                        Using toolkit<br>
+                        Using Google Cloud Platform (GCP)</p>
+                        <p style="color:#2b2b2b; padding-bottom:2em;">Check Slurm Section for more details</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="s3" style="display:none;">
+                <div class="box" style="background-color: #FFF; pointer-events:none;">
+                    <div class="inner" align=left>
+                        <p></p>
+                        <p style="color: #2b2b2b; font-size:20pt; margin-top:0.5em; padding-top: 0.5em;">Visualization Stage</p>
+                        <p style="color:#2b2b2b; margin-top:-2em;">Jupyter Notebook</p>
+                        <p style="margin-top:-1em;">Opening results.ipynb<br>
+                        Using dashboards and custom functionalities</p>
+                        <p style="color:#2b2b2b; padding-bottom:2em;">Check Visualization Section for more details</p>
+                    </div>
+                </div>
+            </section>
+
+    </div>
 </div>
 
 <!-- <div class="inner" style="background-color:#683972e5;">
@@ -108,7 +172,7 @@
     </section>
 </div> -->
 
-<div class="main" style="margin-bottom:5em;">
+<div id="feature" class="main" style="margin-bottom:5em;">
     <div class="inner">
         <header align = center class="major narrow" >
             <h2 style="margin-top:2em;">Some Unique Features</h2>
@@ -171,62 +235,6 @@
         </div>
     </div>
 </div>
-
-<div id="pipeline" style="background-color: #2b2b2b; margin-bottom:-2em">
-    <div class="inner" >
-        <header align = center class="major narrow" >
-            <h2 style="color:white; padding-top:2em;">Haven-AI Pipeline</h2>
-            <p style="margin-top:0.5em; text-transform:none; color:white;">Getting Started: Havenized within 3 steps</p>
-        </header>
-        <div class="nav" align=center style="margin-bottom: -2.5em;padding-bottom:1em;">
-            <a href="#" class="step1" id="s1" style="font-size:x-large; color:#2b2b2b; background-color: #FFF; text-decoration:none; margin-right:1em;padding-bottom: 1em; padding-right:0.5em; padding-left:0.5em; padding-top:0.5em">Stage 1</i></a> 
-            <a href="#" class="step2" id="s2" style="font-size:x-large; color:#FFF; text-decoration:none; margin-right:1em; padding-bottom: 1em; padding-right:0.5em; padding-left:0.5em; padding-top:0.5em">Stage 2</a>
-            <a href="#" class="step3" id="s3" style="font-size:x-large; color:#FFF; text-decoration:none; padding-bottom: 1em; padding-right:0.5em; padding-left:0.5em; padding-top:0.5em">Stage 3</a>
-        </div>
-            <section class="s1">
-                <div class="box" style="background-color: #FFF;">
-                    <div class="inner" align=left>
-                        <p></p>
-                        <p style="color: #2b2b2b; font-size:20pt; margin-top:0.5em; padding-top: 0.5em;">Preparation Stage</p>
-                        <p style="color:#2b2b2b;">Install</p>
-                        <p>pip install --upgrade git+https://github.com/haven-ai/haven-ai</p>
-                        <p style="color:#2b2b2b;">Code Structure</p>
-                        <img src="images/s1.png" alt="" style="max-width: 600px; max-height: 600px;"/>
-                        <p style="color:#FFF; font-size:12pt; margin-left:1em; margin-right:1em">Reduce your workload. Grab existing benchmarks on GitHub for your project with minimum effort to reproduce or integrate current work</p>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="s2" style="display:none;">
-                <div class="box" style="background-color: #FFF;">
-                    <div class="inner" align=left>
-                        <p></p>
-                        <p style="color: #2b2b2b; font-size:20pt; margin-top:0.5em; padding-top: 0.5em;">Running Stage</p>
-                        <p style="color:#2b2b2b;">Run in Sequence</p>
-                        <p>python trainval.py --savedir_base /mnt/home/results -r 1  -v results.ipynb</p>
-                        <p style="color:#2b2b2b;">Run in Parallel</p>
-                        <p>Using slurm tested under Compute Canada servers<br>
-                        Using toolkit<br>
-                        Using Google Cloud Platform (GCP)</p>
-                        <p style="color:#FFF; font-size:12pt; margin-left:1em; margin-right:1em">Reduce your workload. Grab existing benchmarks on GitHub for your project with minimum effort to reproduce or integrate current work</p>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="s3" style="display:none;">
-                <div class="box" style="background-color: #FFF;">
-                    <div class="inner" align=left>
-                        <p></p>
-                        <p style="color: #2b2b2b; font-size:20pt; margin-top:0.5em; padding-top: 0.5em;">Visualization Stage</p>
-                        <p style="color:#2b2b2b;">Jupyter Notebook</p>
-                        <p>Opening results.ipynb</p>
-                        <p style="color:#FFF; font-size:12pt; margin-left:1em; margin-right:1em">Reduce your workload. Grab existing benchmarks on GitHub for your project with minimum effort to reproduce or integrate current work</p>
-                    </div>
-                </div>
-            </section>
-    </div>
-</div>
-
 
 <!-- One -->
 <section id="visualization" class="wrapper style1" style="background-color:lightgray;">
@@ -463,10 +471,29 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
 </script>
 <script>
+	$('.step0').click(function(event) {
+        event.preventDefault();
+	$('section.s3').css('display', 'none');
+    $('section.s2').css('display', 'none');
+	$('section.s1').css('display', 'none');
+    $('section.s0').css('display', '');
+    $(this).css('border-style','solid');
+    $(this).css('background-color','white');
+    $(this).css('color','#2b2b2b');
+    $('.step3').css('background-color','');
+    $('.step3').css('color','white');
+    $('.step2').css('background-color','');
+    $('.step2').css('color','white');
+    $('.step1').css('background-color','');
+    $('.step1').css('color','white');
+	});
+</script>
+<script>
 	$('.step1').click(function(event) {
         event.preventDefault();
 	$('section.s3').css('display', 'none');
     $('section.s2').css('display', 'none');
+    $('section.s0').css('display', 'none');
 	$('section.s1').css('display', '');
     $(this).css('background-color','white');
     $(this).css('color','#2b2b2b');
@@ -474,6 +501,8 @@
     $('.step3').css('color','white');
     $('.step2').css('background-color','');
     $('.step2').css('color','white');
+    $('.step0').css('background-color','');
+    $('.step0').css('color','white');
 	});
 </script>
 <script>
@@ -481,9 +510,12 @@
         event.preventDefault();
 	$('section.s3').css('display', 'none');
     $('section.s1').css('display', 'none');
+    $('section.s0').css('display', 'none');
 	$('section.s2').css('display', '');
     $(this).css('background-color','white');
     $(this).css('color','#2b2b2b');
+    $('.step0').css('background-color','');
+    $('.step0').css('color','white');
     $('.step1').css('background-color','');
     $('.step1').css('color','white');
     $('.step3').css('background-color','');
@@ -493,11 +525,14 @@
 <script>
 	$('.step3').click(function(event) {
         event.preventDefault();
+    $('section.s0').css('display', 'none');
 	$('section.s1').css('display', 'none');
     $('section.s2').css('display', 'none');
 	$('section.s3').css('display', '');
     $(this).css('background-color','white');
     $(this).css('color','#2b2b2b');
+    $('.step0').css('background-color','');
+    $('.step0').css('color','white');
     $('.step1').css('background-color','');
     $('.step1').css('color','white');
     $('.step2').css('background-color','');
